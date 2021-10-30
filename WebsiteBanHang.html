@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Bán Hàng</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    </head>
+</head>
+<body>
+    <div id="website">
+        <!-- THANH RIBBON -->
+        <div id="top">
+            <div id="top_left">
+                <a href="https://www.google.com/"><img id="top_left_icon" src="./img/google.png"/></a>
+                <a href="#"><img id="top_left_icon" style="height: 22px;" src="./img/gmail.png"/></a>
+                <a href="#"><img id="top_left_icon" src="./img/facebook.png"/></a>
+            </div>
+            <div id="top_right">
+                <ul>
+                    <li><a href="#"><div id="btnlog" style="border-radius: 5px;">Đăng nhập</div> </a></li>
+                    <li>|</li>
+                    <li><a href="#"> Đăng ký</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- PHẦN HEADER -->
+        <div id="header">
+            <!-- div thứ 1: hình logo -->
+            <div style="float:left; width:500px; height:100px;margin:15px 0 0 50px; border:1px solid rgb(255, 255, 255)">
+                <img src="img/background.jpg" alt=""width="500" />
+            </div>
+            <!-- div thứ 2: giỏ hành và thông tin giỏ hàng -->
+            <div id="shopcart">
+                <img src="./img/shop.png" style="width: 50px; padding: 0px; margin-left: 10px;">
+                <div id="info_cart">
+                    <p>0 sản phẩm</p>
+                    <p>0 đ</p>
+                </div>
+            </div>
+            <!-- div thứ 3: số điện thoại và tìm kiếm -->
+            <div style="float:right; width:400px; height:60px; border:1px ">
+                <div id="header_phone">Support: 0703123456</div>
+                <div id="header_search">
+                    <!-- Tạo form tìm kiếm-->
+                    <form id="search_form">
+                        <input type="text" id="txtsearch" placeholder="Search for here..." />
+                        <button type="submit" id="btnsearch"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- PHẦN MENU -->
+        <div id="menu">
+            <ul>
+                <img src="./img/home.png" />
+                <li style="border-left:1px dotted #999"><a href="#">Trang chủ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Thời Trang Nam</a></li>
+                <li><a href="#">Thời Trang Nữ</a></li>
+                <li><a href="#">Hướng dẫn mua hàng</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Trợ giúp</a></li>
+            </ul>
+        </div>
+        <!-- PHẦN MAIN -->
+        <div id="main">
+            <div id="main_left">
+                <div id="menu_left">
+                    <ul>
+                        <li><a href="#">Quần áo nữ</a>
+                            <ul class="submenu">
+                                <li><a href="#" class="gachngang">Áo thun nữ</a></li>                                
+                                <li><a href="#">Áo sơ mi nữ</a>
+                                <li><a href="#">Áo khoát, vest nữ</a>
+                                <li><a href="#">Váy đầm</a>
+                                <li><a href="#">Quần jean</a></li>
+                            </ul>
+                        <li><a href="#">Giày dép nữ</a>
+                            <ul class="submenu">
+                                <li><a href="#">Giày cao gót</a></li>
+                                <li><a href="#">Giày búp bê</a>
+                                <li><a href="#">Giày sandal nữ</a>
+                                <li><a href="#">Giày bata nữ</a>
+                                <li><a href="#">Giày thể thao nữ</a>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="products">
+                <ul>
+                    <li>
+                        <div class="content">
+                            <a href="#">
+                                <img src="img/samsung.jpg" alt="" width="210" height="280">
+                                <p class="title">SAMSUNG GALAXY Z FOLD</p>
+                            </a>
+                            <p class="price">25.990.000 đ</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <a href="#">
+                                <img src="img/Windows_11_Desktop.png" alt="" width="210" height="280">
+                                <p class="title">Windows 11</p>
+                            </a>
+                            <p class="price">Hết hàng</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <a href="#">
+                                <img src="img/today.jpg" alt="" width="210" height="280">
+                                <p class="title">Windows 11 Home SL</p>
+                            </a>
+                            <p class="price">1.290.000đ / bộ</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,275 @@
+*{
+    margin:0px;
+    padding:0px;
+} /* reset css ?  */
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:small;
+    background-color:#CCC; /*màu nền xám cho trang web*/
+    /*background:url(images/background.gif); hoặc dùng hình nền*/
+}
+#website{
+    width:1040px;
+    margin:auto; /* Canh giữa website */
+    background-color:#FFF;
+    height:800px;
+}
+#top{
+    width:1000px;
+    margin:auto;
+    height:28px;
+    background-color:#F4F4F4;
+}
+#top_left_icon{
+    height: 20px;
+    padding-left: 10px;
+}
+#top_left{
+    float:left; /* Thẻ div id=top_left nằm bên trái */
+    margin:4px 0 0 20px; /* Thẻ div cách lề trên 4 và trái 20*/
+}
+#top_right{
+    float:right; /* Thẻ div id=top_right nằm bên phải */
+    margin: 5px 20px 0 0px; /* Thẻ div cách lề trên 5 và phải 20*/
+}
+a{
+    text-decoration:none; /*Bỏ gạch dưới của tất cả thẻ a trong website*/
+}
+#btnlog:hover{
+    background-color: rgb(157, 255, 127);
+    transition: all ease-in-out 0.2s;
+}
+#top_right ul{
+    list-style-type:none; /*Tạo ds không dấu*/
+}
+#top_right ul li{
+    float:left; /* Các li nằm 1 hàng ngang*/
+    margin-right:5px; /* Các li cách nhau 5px*/
+    color:#999; /* Đổi màu xám li | */
+}
+#top_right ul li a{
+    color:#999; /* Đổi màu xám chữ của thẻ a*/
+}
+#top_right ul li a:hover{
+    color:#00F; /* Rê chuột vào thẻ a đổi màu xanh*/
+}
+
+/* PHẦN HEADER */
+#header{
+    width:1000px;
+    margin:auto;
+    height:150px;
+    border:1px solid rgb(255, 255, 255);
+    
+}
+#shopcart{
+    float:right;
+    width:180px;
+    height:67px;
+    border:1px solid rgb(0, 0, 0);
+    position:relative; /*div shopcart cố định*/ border-radius: 10px;
+}
+#shopcart img{
+    width:180px;
+    margin-top:13px;
+}
+#info_cart{
+    position:absolute; z-index:99; /*div info-cart nằm lên*/
+    top:0px; /*div info-cart nằm lên cách top shopcart là 0*/
+    margin: 25px 0 0 100px; /*cách lề info-cart với shopcart*/
+    text-align:center;
+    color:#F00; /*canh giữa chữa trong div info-cart*/
+}
+#header_phone{
+    width:150px;
+    height:30px;
+    border:1px ;
+    float:left; /* 2 div header_phone, header_search trên 1 hàng*/
+    margin-top:28px;
+    background:url(./img/call.png) no-repeat; /* tạo hình nền & k cho hình lặp lại*/
+    background-size: 25px;
+    padding-left:30px; /* số điện thoại cách lề trái 30px*/
+    font-size:14px;
+    color:#00F;
+    line-height:30px; /* Canh giữa chiều cao*/
+}
+#header_search{
+    width:216px;
+    height:30px;
+    border:1px solid #000;
+    float:left; /* 2 div header_phone, header_search trên 1 hàng*/
+    margin-top:28px;
+    background:#f7f7f7;
+    position:relative; /*cố định để hiệu chỉnh btnsearch*/
+    border-radius: 10px;
+}
+#txtsearch{
+    padding-inline-start: 10px;
+    width:206px;
+    height:30px;
+    border-style:none; /*bỏ viền khung txtsearch*/
+    background:none;
+    border-radius: 10px;
+}
+#btnsearch{
+    width:34px;
+    height:30px;
+    /* nằm trên div header_search cách top và right 0px*/
+    position:absolute; z-index:99; top:0; right:0;
+    border:0; /*mất viền button*/
+    background:url(./img/find.png) no-repeat;
+    background-size: 30px;
+    cursor:pointer; /*rê chuột vào xuất hiện bàn tay*/
+}
+#menu{
+    width:1000px;
+    margin:15px auto; /*canh giữa và div menu cách div phía trên 15px*/
+    height:42px;
+    /* border:1px solid #000000; */
+    background: #000;
+}
+#menu ul li{
+    float:left; /*các li nằm trên 1 hàng*/
+    border-right:1px dotted #FFF; /* Tạo đường gạch ngăn cách các li*/
+    height:42px;
+}
+/* #menu ul{
+    list-style-type:none;
+} */
+#menu ul li a{
+    /*khoảng cách từ nội dung(chữ) đến lề trái & phải của mỗi li 25px*/
+    padding:0 25px 0 25px;
+    color:#FFF;
+    background:#000;
+    font-weight:bold;
+    line-height:42px; /*nội dung canh giữa chiều cao*/
+    display: inline-block;
+}
+#menu img{
+    background: rgb(207, 185, 185);
+    float:left;
+    padding:2px 10px 0 10px;
+    width: 40px;
+}
+#menu ul li a:hover{
+    background:#999;
+    color:#00C;
+}
+
+/* PHẦN MAIN */
+#main{
+    width:1000px;
+    margin:10px auto;
+    height:800px;
+    border:1px;
+}
+#main_left{
+    width:230px;
+    height:750px;
+    float:left;
+    border:1px ;
+}
+#main_right{
+    width:765px;
+    height:750px;
+    float:left;
+    border:1px solid #000;
+}
+#menu_left{
+    width:200px;
+    height:300px;
+    border:1px ;
+    margin:10px 0 0 14px; /*div cách trên 10, trái 14*/
+}
+li{
+    list-style: none;
+}
+#menu_left >ul{ /* dấu ">" chỉ ảnh hưởng ul đầu tiên, k ảnh hưởng ul thứ 2*/
+    padding:10px 20px 10px 20px;
+}
+#menu_left li{
+   line-height:25px;
+}
+#menu_left >ul >li{
+    border-bottom:1px solid #999;
+}
+.submenu li{
+    padding-left:30px;
+}
+li>ul>li:hover{
+    transition: all ease-in-out 0.1s;
+    font-weight: bold;
+    background-color: lightblue;
+}
+.submenu li{
+    padding-left:30px;
+    background-image:url(./img/arrow.png) no-repeat 15px 10px;
+}
+#menu_left a{
+    color:#00F; /*màu xanh*/
+}
+#menu_left a:hover{
+    color:#f1004c; /*màu đỏ*/
+    cursor:pointer; /*hình bàn tay*/
+}
+#menu_left{
+    width:200px;
+    height:320px;
+    border:1px sandybrown;
+    margin:10px 0 0 14px; /*cách trên 10, trái 14*/
+    border:1px solid #cccccc;
+    border-radius:6px; /*bo tròn góc 1 độ 6px*/
+}
+#main{
+    width:1000px;
+    margin:15px auto;
+    height:800px;
+    /*border:1px solid #000000;*/
+}
+#main_left{
+    width:220px;
+    height:750px;
+    float:left;
+    /*border:1px solid #000;*/
+}
+
+#main_right {
+    width: 746px;
+    /* height: 750px; */
+    float: left;
+    border-left: 1px dotted #333;
+    margin-left: 20px;
+}
+ul{
+    list-style: none;
+}
+#products{
+    margin-left: 17px;
+}
+#products ul li{
+    width: 230px;
+    height: 340px;
+    float: left;
+    margin-right: 7px;
+    transition: .5s;
+}
+.content{
+    width: 210px;
+    height: 320px;
+    margin: 9px 10px 9px 10px;
+}
+.title{
+    margin-top: 6px;
+    text-align: center;
+    color: #f09;
+}
+.price{
+    margin-top: 3px;
+    text-align: center;
+    font-size: 12px;
+    color: #999999;
+}
+#products ul li:hover{
+    background-color: #ccc;
+    box-shadow: 0 0 5px #2c2c30;
+}
